@@ -14,3 +14,26 @@ body{
     width: 50%;
     height: auto;
 }
+
+@media screen and (width <= 991px) {
+    .box {
+        width: 70%;
+    }
+}
+
+@media screen and (width <= 570px) {
+    .box {
+        width: 90%;
+    }
+}
+
+@media screen and (width <= 416px) {
+    .box {
+        width: 90%;
+    }
+    
+    .btns-container{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}

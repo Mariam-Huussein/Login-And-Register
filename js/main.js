@@ -12,7 +12,7 @@ function displaySignInForm() {
                         <label for="password-for-sign" class="form-label">Password</label>
                         <input type="password" class="form-control" id="password-for-sign" required>
                     </div>
-                    <div class="d-flex justify-content-around">
+                    <div class="d-flex justify-content-around btns-container">
                         <button type="submit" class="btn btn-primary px-5 py-2">Submit</button>
                         <button type="button" class="btn btn-secondary px-5 py-2" onclick="displaySignUpForm()">Sign Up</button>
                     </div>
@@ -45,7 +45,7 @@ function displaySignUpForm() {
                         <label for="submit-password" class="form-label">Submit Password</label>
                         <input type="password" class="form-control" id="submit-password" required>
                     </div>
-                    <div class="d-flex justify-content-around">
+                    <div class="d-flex justify-content-around btns-container">
                         <button type="submit" class="btn btn-primary px-5 py-2">Submit</button>
                         <button type="button" class="btn btn-secondary px-5 py-2" onclick="displaySignInForm()">Sign In</button>
                     </div>
