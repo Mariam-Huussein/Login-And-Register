@@ -53,6 +53,11 @@ function displaySignUpForm() {
     `
 }
 
+//function to returns users from local Storage 
+function getUsersFromLocalStorage() {
+    return (localStorage.getItem("users") ? JSON.parse(localStorage.getItem("users")) : []);
+}
+
 //Function To Display User Info When he Sign In successfully 
 function displaySignInDone(user) {
     formContainer.innerHTML=`
@@ -61,11 +66,6 @@ function displaySignInDone(user) {
                 <h4 class="title text-center">Email: <p>${user.userEmail}</p></h4>
                 <button type="button" class="btn btn-secondary px-5 py-2" onclick="displaySignInForm()">Sign Out</button>
     `;
-}
-
-//function to returns users from local Storage 
-function getUsersFromLocalStorage() {
-    return (localStorage.getItem("users") ? JSON.parse(localStorage.getItem("users")) : []);
 }
 
 //Function To check the sign up form
@@ -112,6 +112,7 @@ function registerForm(event) {
         email.style.border= "var(--bs-border-width) solid var(--bs-border-color)";
     }
     event.preventDefault();
+    alert("You Created Account Successfully");
 }
 
 //Function To Check Sign In Form 
